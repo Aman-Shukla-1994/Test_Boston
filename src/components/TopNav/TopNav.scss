@@ -1,0 +1,67 @@
+.TopNav {
+  align-items: center;
+  background: var(--color-white);
+  display: flex;
+  height: 60px;
+  z-index: 2;
+
+  &__download-button {
+    margin-right: 24px;
+  }
+
+  &__dropdown-menu {
+    background: #fff;
+    box-shadow: 0 3px 3px rgba(4, 34, 53, 0.06);
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 100vw;
+    z-index: 2;
+  }
+
+  &__dropdown-menu-item-container {
+    cursor: auto;
+    padding: 32px;
+  }
+
+  &__left {
+    align-items: center;
+    display: flex;
+    height: 100%;
+  }
+
+  &__right {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    justify-content: flex-end;
+  }
+
+  &__right-menu-toggle-container {
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    height: 100%;
+    padding: 0 12px;
+    position: relative;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.02);
+    }
+  }
+
+  @media (max-width: 992px) {
+    &__download-button {
+      display: none;
+    }
+
+    &__right-menu-toggle-container {
+      display: flex;
+    }
+  }
+}
