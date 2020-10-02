@@ -89,6 +89,7 @@ typings/
 out/
 
 # Webstorm
+.idea/
 
 # VS Code
 .vscode/
